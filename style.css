@@ -4,9 +4,6 @@ html{
     background: blue;
     background: linear-gradient(#9090fa, #2952ff);
 }
-ul{
-        list-style-position: inside;
-}
 h1{
     cursor: default;
     -webkit-user-select: none;
