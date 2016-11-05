@@ -58,8 +58,20 @@ p {
 }
 #contentFrame{
     width: calc(100% - 300px);
-    height: 100%;
+    height: calc(100% - 70px);
     display: inline-block;
+}
+#contentDesc{
+    width: calc(100% - 300px);
+    height: 68px;
+    background: linear-gradient(#d2faff, #c5e0ff);
+    display: inline-block;
+    border-top: 2px solid #ddd;
+}
+#p_desc{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
 }
 .contentItem{
     transition: opacity 0.4s;

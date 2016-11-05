@@ -1,3 +1,9 @@
+var descriptions = {
+    'breathe': 'No Description Yet',
+    'countFromTen': 'No Description Yet',
+    'getImage': 'No Description Yet'
+};
+
 function start() {
     document.getElementById('p_readyToStart').style.opacity = '0';
     document.getElementById('btn_start').style.opacity = '0';
@@ -35,8 +41,13 @@ function clearCurrentItem(){
     }, 400);
 }
 
+function updateDesc(val){
+    desc.innerHTML = descriptions[val];
+}
+
 function breathe(){
     clearCurrentItem();
+    updateDesc('breathe');
     setTimeout(function(){
         document.getElementById('videoFrame').style.display = 'initial';
         document.getElementById('videoFrame').style.opacity = 1;
@@ -48,6 +59,7 @@ function breathe(){
 
 function countToTen() {
     clearCurrentItem();
+    updateDesc('countFromTen');
     setTimeout(function(){
         document.getElementById('countToTen').style.display = 'inline-block';
         document.getElementById('countToTen').style.opacity = 1;
@@ -63,6 +75,7 @@ function rannum(){
 }
 
 function getImage(){
+    updateDesc('getImage');
     clearCurrentItem();
     if(localStorage.getItem('isDavis') === '1'){
         alert('Hey Davis! Stop looking at cat images! :p');
