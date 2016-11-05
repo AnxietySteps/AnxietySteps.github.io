@@ -91,16 +91,14 @@ function rannum(){
 function getImage(){
     updateDesc('getImage');
     clearCurrentItem();
-    if(localStorage.getItem('isDavis') === '1'){
-        alert('Hey Davis! Stop looking at cat images! :p');
-        window.open('https://anxietysteps.github.io/', '_self');
-    }
     setTimeout(function(){
         document.getElementById('imageFrame').style.display = 'inline-block';
         document.getElementById('imageFrame').style.opacity = 1;
         setTimeout(function(){
             var rnum = rannum();
-            var imageURL = 'https://placekitten.com/'+rnum+'/'+rnum;
+            var whRatio = (contentFrame.offsetHeight+8) / contentFrame.offsetWidth;
+            var rh = Math.ceil(rnum*whRatio);
+            var imageURL = 'https://placekitten.com/'+rnum+'/'+rh;
             cuteImage.src = imageURL;
         }, 400)
     }, 400);
