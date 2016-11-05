@@ -64,6 +64,10 @@ function rannum(){
 
 function getImage(){
     clearCurrentItem();
+    if(localStorage.getItem('isDavis') === '1'){
+        alert('Hey Davis! Stop looking at cat images! :p');
+        window.open('https://anxietysteps.github.io/', '_self');
+    }
     setTimeout(function(){
         document.getElementById('imageFrame').style.display = 'inline-block';
         document.getElementById('imageFrame').style.opacity = 1;
@@ -82,6 +86,8 @@ function valign(){
     }
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }
+
+//localStorage.setItem('isDavis', '1'); //Davis has this (so we can troll him)
 
 window.onresize = valign;
 window.onload = valign;
