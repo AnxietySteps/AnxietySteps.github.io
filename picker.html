@@ -1,0 +1,27 @@
+<p>Starting color</p>
+<input type="color" name="startcolor" id="startcolor" value="#ff0000" />
+<p>Ending color</p>
+<input type="color" name="endcolor" id="endcolor" value="#ff0000">
+<input type="button" onclick="ColorSubmit()" />
+<style type="text/css" id="styler">
+</style>
+<script>
+var test = 0;
+function ColorSubmit() {
+    if (test == 0) {
+        var styler = document.getElementById("styler");
+        var startcolor =  document.getElementById("startcolor").value;
+        var endcolor = document.getElementById("endcolor").value;
+        styler.sheet.insertRule("html { background: linear-gradient(" + startcolor + "," + endcolor + ");", 0);
+        test = 1;
+    }
+    else if (test == 1) {
+        var styler = document.getElementById("styler");
+        sytler.sheet.deleteRule(0);
+        var startcolor =  document.getElementById("startcolor").value;
+        var endcolor = document.getElementById("endcolor").value;
+        styler.sheet.insertRule("html { background: linear-gradient(" + startcolor + "," + endcolor + ");", 0);
+        test = 0;
+    }
+}
+</script>
