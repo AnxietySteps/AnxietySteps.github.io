@@ -10,6 +10,9 @@ function start() {
             valign();
         }, 5);
     }, 495);
+}
+
+function breathe() {
     setTimeout(function(){//Start the video
         runAnimation();
 //        document.getElementById('video').play();
