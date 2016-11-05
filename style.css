@@ -140,3 +140,6 @@ p {
 #teamPic{
     border-radius: 4px;
 }
+#introVideo{
+    border: 1px solid black;
+}
