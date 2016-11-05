@@ -26,9 +26,13 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;fo
     border-color: #555;
     background-color: #f4f4f4;
 }
+#frame_div{
+    display: none;
+}
 #frame{
     border: 1px solid gray;
     position: absolute;
-    height: 80%;
-    width: calc(100% - 20px);
+    height: 70%;
+    margin-left: 60px;
+    width: calc(100% - 120px);
 }
