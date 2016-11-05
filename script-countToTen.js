@@ -11,11 +11,11 @@ if(!running || v===1){
         ctn.style.transition = 'fontSize 0.01s, color 0.1s';
         ctn.style.fontSize = '100px';
         ctn.style.color = 'rgb(0,0,0)';
+        count --;
+        ctn.innerHTML = count.toString();
     }, 900);
     if(count > 0){
         setTimeout(function(){
-            count --;
-            ctn.innerHTML = count.toString();
             runAnimation(1);
         }, 1000);
     }

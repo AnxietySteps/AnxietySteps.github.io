@@ -26,8 +26,13 @@ function clearCurrentItem(){
     cc_items = document.getElementsByClassName('contentItem');
     for(var i = 0; i<cc_items.length; i++){
         cc_items[i].style.opacity = '0';
-        hideItem(cc_items[i]);
+        //hideItem(cc_items[i]);
     }
+    setTimeout(function(){
+        for(var i = 0; i<cc_items.length; i++){
+            cc_items[i].style.display = 'none';
+        }
+    }, 400);
 }
 
 function breathe(){
@@ -44,6 +49,7 @@ function breathe(){
 function countToTen() {
     clearCurrentItem();
     setTimeout(function(){
+        document.getElementById('countToTen').style.display = 'inline-block';
         document.getElementById('countToTen').style.opacity = 1;
         setTimeout(function(){//Start the video
             count = 10;
@@ -53,6 +59,10 @@ function countToTen() {
 }
 
 function valign(){
+    var videos = document.getElementsByTagName('video');
+    for(var i = 0; i<videos.length; i++){
+        videos[i].style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
+    }
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }
 
