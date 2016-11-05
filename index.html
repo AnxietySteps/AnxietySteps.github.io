@@ -37,6 +37,9 @@
             <div class='contentItem' id='countToTen' style='display: none'>
                 <p id='countToTen_number'>10</p>
             </div>
+            <div>
+            <img id="the-image" src="https://link.com/number="/>
+            </div>
           </div>
           <div id='menu'>
             <h2>MENU</h2>
@@ -48,6 +51,15 @@
     </span>
       <script>
         var ctn = document.getElementById('countToTen_number')
+      </script>
+      <script>
+      function onRandomNeeded() {
+    var image = document.querySelector('#the-image');
+
+    var number = Math.random() * 10000000000000000;
+
+    image.src += number;
+}
       </script>
   </body>
 </html>
