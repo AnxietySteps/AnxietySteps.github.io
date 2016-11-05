@@ -114,7 +114,6 @@ function valign(){
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }
 
-//localStorage.setItem('isDavis', '1'); //Davis has this (so we can troll him)
 
 window.onresize = valign;
 window.onload = valign;
