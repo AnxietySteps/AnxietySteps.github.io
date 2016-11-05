@@ -1,10 +1,14 @@
-if(navigator.userAgent.toLowerCase().indexOf('windows') === -1){
+/*if(navigator.userAgent.toLowerCase().indexOf('windows') === -1){
     alert('We blocked users not running windows for 15 minutes or so.');
     window.open('http://corgiorgy.com', '_self');
-}
+}*/
 
 var descriptions = {
-    'breathe': 'In this activity, you will follow the animation. First breathe in for as long as the animation says, then hold it for the time it says, then release your breath slowly. Repeat this process as many times as you need to.',
+    'CalmingBreath': 'In this activity, you will follow the animation. First breathe in for as long as the animation says, then hold it for the time it says, then release your breath slowly. Repeat this process as many times as you need to.',
+    'CalmingSleep': 'No Description Yet.',
+    'CalmingArchery': 'No Description Yet.',
+    'CalmingWords': 'No Description Yet.',
+    'CalmingFoodSmile': 'No Description Yet.',
     'countFromTen': 'For this activity, you will need to follow what the screen says. As you see the numbers count down, you will read out loud what each number is, counting fown from ten.',
     'getImage': 'This activity is simple, simply sit back and enjoy the cute pictures of kittens.'
 };
@@ -66,7 +70,7 @@ function updateDesc(val){
 
 function transitionToVideo(url){
     clearCurrentItem();
-    updateDesc('breathe');
+    updateDesc(url);
     setTimeout(function(){
         document.getElementById('videoFrame').style.display = 'initial';
         document.getElementById('videoFrame').style.opacity = 1;
