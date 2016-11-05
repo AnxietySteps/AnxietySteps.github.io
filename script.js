@@ -1,5 +1,4 @@
 function start() {
-    "use strict";
     document.getElementById('p_readyToStart').style.opacity = '0';
     document.getElementById('btn_start').style.opacity = '0';
     document.getElementById('btn_start').style.pointer = 'default';
@@ -9,5 +8,8 @@ function start() {
         setTimeout(function () {
             document.getElementById('frame_div').style.opacity = '1';
         }, 5);
-    }, 500);
+    }, 495);
+    setTimeout(function(){//Start the video
+        document.getElementById('video').play();
+    }, 1000)
 }
