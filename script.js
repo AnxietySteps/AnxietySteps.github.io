@@ -7,6 +7,6 @@ function start() {
         document.getElementById('frame_div').style.display = 'initial';
         setTimeout(function(){
             document.getElementById('frame_div').style.opacity = '1';
-        }, 5)
-	}, 500)
+        }, 5);
+	}, 500);
 }
