@@ -64,3 +64,6 @@ p {font-size:18px}
     border-left: 2px solid #ddd;
     background: linear-gradient(#f5f5ff,#d3e9ff)
 }
+.button_menu{
+    cursor: pointer;
+}
