@@ -6,7 +6,7 @@
     <title>Anxiety Steps</title>
     <script>
       var loc = window.location.href+'';
-        if (loc.indexOf('http://')==0){
+        if (loc.indexOf('http://')==0 && loc.indexOf('github.io') !== -1){
           window.location.href = loc.replace('http://','https://');
         }
     </script>
