@@ -105,23 +105,3 @@ function valign(){
 
 window.onresize = valign;
 window.onload = valign;
-
-/*
-//Davis's broken code that doesn't work
-
-      function imageGet() {
-            clearCurrentItem();
-            setTimeout(function(){
-            document.getElementById('image').style.display = 'initial';
-            document.getElementById('image').style.opacity = 1;
-            setTimeout(function(){
-            document.getElementById('the-image').play();
-        }, 400);
-    }, 400);
-    var image = document.querySelector('#the-image');
-
-    var number = Math.round(Math.random() * 10000);
-
-    image.src += number;
-}
-*/
