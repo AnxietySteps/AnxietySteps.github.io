@@ -11,7 +11,7 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;fo
     border: 1px solid #aaa;
     background-color: rgb(255, 255, 255);
     outline: none;
-    transition: all 0.2s;
+    transition: all 0.2s, opacity 1s;
 }
 #btn_start:focus{
     border-color: #888;
