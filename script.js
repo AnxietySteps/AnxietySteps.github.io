@@ -5,6 +5,7 @@ var descriptions = {
 };
 
 function start() {
+    document.getElementById('funFacts').style.opacity = '0';
     document.getElementById('p_readyToStart').style.opacity = '0';
     document.getElementById('btn_start').style.opacity = '0';
     document.getElementById('btn_start').style.pointer = 'default';
