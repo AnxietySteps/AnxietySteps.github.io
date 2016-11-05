@@ -58,6 +58,23 @@ function countToTen() {
     }, 400);
 }
 
+function rannum(){
+    return Math.round(Math.random()*900+900);
+}
+
+function getImage(){
+    clearCurrentItem();
+    setTimeout(function(){
+        document.getElementById('imageFrame').style.display = 'inline-block';
+        document.getElementById('imageFrame').style.opacity = 1;
+        setTimeout(function(){
+            var rnum = rannum();
+            var imageURL = 'https://placekitten.com/'+rnum+'/'+rnum;
+            cuteImage.src = imageURL;
+        }, 400)
+    }, 400);
+}
+
 function valign(){
     var videos = document.getElementsByTagName('video');
     for(var i = 0; i<videos.length; i++){
@@ -68,3 +85,23 @@ function valign(){
 
 window.onresize = valign;
 window.onload = valign;
+
+/*
+//Davis's broken code that doesn't work
+
+      function imageGet() {
+            clearCurrentItem();
+            setTimeout(function(){
+            document.getElementById('image').style.display = 'initial';
+            document.getElementById('image').style.opacity = 1;
+            setTimeout(function(){
+            document.getElementById('the-image').play();
+        }, 400);
+    }, 400);
+    var image = document.querySelector('#the-image');
+
+    var number = Math.round(Math.random() * 10000);
+
+    image.src += number;
+}
+*/

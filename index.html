@@ -3,7 +3,6 @@
   <head>
   <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:300,400,700" rel="stylesheet">
   <script src="https://www.google.com/jsapi"></script>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Anxiety Steps</title>
     <script>
@@ -37,37 +36,20 @@
             <div class='contentItem' id='countToTen' style='display: none'>
                 <p id='countToTen_number'>10</p>
             </div>
-            <div class='imageItem' id='image' style='display: none'>
-            <img id="the-image" src="https://placekitten.com/"/>
+            <div class='contentItem' id='imageFrame' style='display: none'>
+                <img id="cuteImage" src="https://placekitten.com/"/>
             </div>
           </div>
           <div id='menu'>
             <h2>MENU</h2>
             <p class="button_menu" onclick="breathe()">Calming Breathing</p>
             <p class="button_menu" onclick='countToTen()'>Count From Ten</p>
-            <p class="button_menu" onclick='imageGet()'>Get Image</p>
+            <p class="button_menu" onclick='getImage()'>Get Image</p>
           </div>
       </div>
     </span>
       <script>
         var ctn = document.getElementById('countToTen_number')
-      </script>
-      <script>
-      function imageGet() {
-            clearCurrentItem();
-            setTimeout(function(){
-            document.getElementById('image').style.display = 'initial';
-            document.getElementById('image').style.opacity = 1;
-            setTimeout(function(){
-            document.getElementById('the-image').play();
-        }, 400);
-    }, 400);
-    var image = document.querySelector('#the-image');
-
-    var number = Math.round(Math.random() * 10000);
-
-    image.src += number;
-}
       </script>
   </body>
 </html>

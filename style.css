@@ -103,3 +103,7 @@ p {
     margin-top: 200px;;
     transition: all 1s;
 }
+#cuteImage{
+    width: 100%;
+    height: 100%;
+}
