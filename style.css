@@ -4,6 +4,11 @@ html{
     background: blue;
     background: linear-gradient(#9090fa, #2952ff);
 }
+h1{
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+}
 h1, h2{
    text-align:center;
 }
@@ -58,6 +63,9 @@ p {font-size:18px}
 }
 #menu{
     text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
     float: right;
     width: 298px;
     height: 100%;
