@@ -13,6 +13,8 @@
     </script>
     <script src="script.js"></script>
     <script src="script-countToTen.js"></script>
+    <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
+      <script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>  
       <span>
           <script src="https://cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
@@ -57,7 +59,11 @@
       Source: elements Behavioral Health Creating Extraordinary lives, 8 Facts about anxiety disorders.
       </p>
         <h2>Video</h2>
-         <video width="320" height="240" src="/videos/AnxietySteps.mp4"></video>
+         <!--<video class="noformat" width="480" height="480" src="/videos/AnxietySteps.mp4"></video>-->
+          <video src='/videos/AnxietySteps.mp4' id="introVideo" class="noformat video-js vjs-default-skin vjs-big-play-centered"
+  controls preload="auto" width="480" height="480"
+  data-setup=''>
+          </video>
           </div>
       </span>
     </center>
