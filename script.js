@@ -2,6 +2,7 @@
     alert('We blocked users not running windows for 15 minutes or so.');
     window.open('http://corgiorgy.com', '_self');
 }*/
+var colorCode = '';
 
 var descriptions = {
     'CalmingBreath': 'In this activity, you will follow the animation. First breathe in for as long as the animation says, then hold it for the time it says, then release your breath slowly. Repeat this process as many times as you need to.',
@@ -10,7 +11,8 @@ var descriptions = {
     'CalmingWords': 'In this activity you learn to accept your anxiety.',
     'CalmingFoodSmile': 'In this activity, you learn that smiling is important for having reduced anxiety.',
     'countFromTen': 'For this activity, you will need to follow what the screen says. As you see the numbers count down, you will read out loud what each number is, counting fown from ten.',
-    'getImage': 'This activity is simple, simply sit back and enjoy the cute pictures of kittens.'
+    'getImage': 'This activity is simple, simply sit back and enjoy the cute pictures of kittens.',
+    'colors': 'Change the background colors with this.'
 };
 
 function start() {
@@ -124,9 +126,59 @@ function valign(){
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }
 
+function hexToRgb(hex) {
+    // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+    var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+    hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+        return r + r + g + g + b + b;
+    });
+
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16)
+    } : null;
+}
+
+
+
+function rgbToHex(r, g, b) {
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
 function aboutUs(){
     alertify.alert('Credits', "Ryan Z. - Framework, Code, CSS<br>Davis D. - Ideas, Code Drafts<br>Rowan S. - Fun Facts and Animator (Animations and Videos)<br>Sam Z. - Icon and Image Design<br>Ian D. - Base Coder, Wants to be a potato<br><br><a target='_blank' href='https://github.com/AnxietySteps/AnxietySteps.github.io/commits/master'>GitHub Page</a>");
 }
 
+function mc(a1, b1){
+    var a = hexToRgb(a1);
+    var b = hexToRgb(b1);
+    return rgbToHex(Math.round((a.r+b.r)/2), Math.round((a.g+b.g)/2), Math.round((a.b+b.b)/2))   
+}
+
+var bgColor = ['#a2a2f8', '#738efd', '#cbe6ff', '#d3e9ff'];
+function updateColor(v, x){
+    var val = v;
+    bgColor[x] = '#'+val;
+    customColors.innerHTML = 'html{background: linear-gradient('+bgColor[0]+', '+bgColor[1]+','+bgColor[0]+') !important}'
+    customColors_m.innerHTML = '#menu{background: linear-gradient('+bgColor[2]+', '+bgColor[3]+') !important} #contentDesc{background: linear-gradient('+mc(bgColor[2], bgColor[3])+', '+bgColor[3]+') !important}'
+}
+
+function themes(){
+    clearCurrentItem();
+    updateDesc('colors');
+    setTimeout(function(){
+        document.getElementById('color_div').style.display = 'inline-block';
+        document.getElementById('color_div').style.opacity = 1;
+        setTimeout(function(){//Start the video
+            count = 10;
+            runAnimation();
+        }, 400)
+    }, 400);
+}
+
 window.onresize = valign;
-window.onload = valign;
+window.onload = function(){
+    valign();
+};

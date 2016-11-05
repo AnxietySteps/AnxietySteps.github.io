@@ -12,9 +12,14 @@
         }
     </script>
     <script src="script.js"></script>
+      <style id='customColors'>
+      </style>
+      <style id='customColors_m'>
+      </style>
     <script src="script-countToTen.js"></script>
     <link href="//vjs.zencdn.net/5.4.6/video-js.min.css" rel="stylesheet">
       <script src="//vjs.zencdn.net/5.4.6/video.min.js"></script>  
+          <script src='jscolor.min.js'></script>
       <span>
           <script src="https://cdn.jsdelivr.net/alertifyjs/1.8.0/alertify.min.js"></script>
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
@@ -82,6 +87,11 @@
             <div class='contentItem' id='imageFrame' style='display: none'>
                 <img id="cuteImage" src="https://placekitten.com/"/>
             </div>
+            <div class='contentItem' id='color_div' style='display: none'>
+                Background Color: <input value='a2a2f8' class="jscolor {onFineChange:'updateColor(this, 0)'}"/> to <input  value='738efd' class="jscolor {onFineChange:'updateColor(this, 1)'}"/>
+                <br>
+                Menu Color: <input value='f5f5ff' class="jscolor {onFineChange:'updateColor(this, 2)'}"/> to <input  value='d3e9ff' class="jscolor {onFineChange:'updateColor(this, 3)'}"/>
+              </div>
           </div>
           <div id='menu'>
             <h2 style='font-family: "Comfortaa", "Open Sans", sans-serif'>MENU</h2>
@@ -93,11 +103,11 @@
             <p class="button_menu" onclick="transitionToVideo('CalmingSleep')">Sleep Well</p>
             <p class="button_menu" onclick="transitionToVideo('CalmingArchery')">You Don't Have to be Perfect</p>
             <br>
-            <p class="button_menu" onclick='settings()'>Settings &amp; Themes</p>
+            <p class="button_menu" onclick='themes()'>Colors</p>
             <p class="button_menu" onclick='aboutUs()'>Credits</p>
           </div>
           <div id='contentDesc'>
-              <p id='p_desc' style='display: none'><b>How To Use Anxiety Steps: </b><span id='desc'>To follow through different steps of decreasing anxiety, click on one of the activities to do in the menu and then follow the instructions given.</span></p>
+              <p id='p_desc' style='display: none'><b>How to Use This: </b><span id='desc'>To follow through different steps of decreasing anxiety, click on one of the activities to do in the menu and then follow the instructions given.</span></p>
               <p id='p_altDesc'>Welcome to Anxiety Steps! To follow through different steps of decreasing anxiety, click on one of the activities to do in the menu and then follow the instructions given.</p>
           </div>
       </div>

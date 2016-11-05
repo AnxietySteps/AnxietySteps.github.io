@@ -147,3 +147,7 @@ p {
 #p_altDesc{
     padding-left: 5px;
 }
+.jscolor{
+    border-width: 1px;
+    width: 80px;
+}
