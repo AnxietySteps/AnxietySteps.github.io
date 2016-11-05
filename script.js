@@ -1,7 +1,7 @@
 var descriptions = {
-    'breathe': 'In this activity, you will follow the animation. First breathe in for as long as the animation says, then hold it for the time it says, then release your breath slowly.',
-    'countFromTen': 'No Description Yet',
-    'getImage': 'No Description Yet'
+    'breathe': 'In this activity, you will follow the animation. First breathe in for as long as the animation says, then hold it for the time it says, then release your breath slowly. Repeat this process as many times as you need to.',
+    'countFromTen': 'For this activity, you will need to follow what the screen says. As you see the numbers count down, you will read out loud what each number is, counting fown from ten.',
+    'getImage': 'This activity is simple, simply sit back and enjoy the cute pictures of kittens.'
 };
 
 function start() {
