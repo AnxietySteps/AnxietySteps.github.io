@@ -83,8 +83,6 @@ function valign(){
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }
 
-localStorage.setItem('isDavis', '1');
-
 window.onresize = valign;
 window.onload = valign;
 
