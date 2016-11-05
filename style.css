@@ -62,8 +62,13 @@ p {font-size:18px}
     width: 298px;
     height: 100%;
     border-left: 2px solid #ddd;
-    background: linear-gradient(#f5f5ff,#d3e9ff)
+    background: linear-gradient(#f5f5ff,#d3e9ff);
+    line-height: 0.9;
 }
 .button_menu{
     cursor: pointer;
+    transition: all 0.2s;
+}
+.button_menu:hover{
+    color: dodgerblue;
 }
