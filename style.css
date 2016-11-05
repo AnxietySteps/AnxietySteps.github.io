@@ -40,10 +40,10 @@ p {font-size:18px}
     transition: opacity 0.5s;
 }
 #frame{
-    border: 2px solid #aaa;
+    border: 2px solid #000;
     position: absolute;
     height: 70%;
-    margin-left: 60px;
+    margin-left: 65px;
     width: calc(100% - 120px);
     background: white;
 }
