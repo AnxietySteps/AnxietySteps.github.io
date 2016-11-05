@@ -43,7 +43,7 @@ p {font-size:18px}
     border: 2px solid #000;
     position: absolute;
     height: 70%;
-    margin-left: 65px;
+    margin-left: 60px;
     width: calc(100% - 120px);
     background: white;
 }
