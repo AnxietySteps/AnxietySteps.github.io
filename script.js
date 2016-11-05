@@ -7,9 +7,17 @@ function start() {
         document.getElementById('frame_div').style.display = 'initial';
         setTimeout(function () {
             document.getElementById('frame_div').style.opacity = '1';
+            valign();
         }, 5);
     }, 495);
     setTimeout(function(){//Start the video
         document.getElementById('video').play();
     }, 1000)
 }
+
+function valign(){
+    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
+}
+
+window.onresize = valign;
+window.onload = valign;
