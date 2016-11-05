@@ -70,5 +70,8 @@ p {font-size:18px}
     transition: all 0.2s;
 }
 .button_menu:hover{
-    color: dodgerblue;
+    color: #1e90ff;
+}
+.button_menu:active{
+    color: #0079ef;
 }
