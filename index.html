@@ -43,7 +43,7 @@
         <h2>Our Team</h2>
         <img id='teamPic' title='Our Team :D' src="/images/grouppic.JPG" alt="Anxiety Steps Team" width=400 height=300 />
         <br />
-        <h2>Fun Facts:</h2>
+        <h2>Fun Facts</h2>
       <ul>
         <li>Just because you worry doesn't mean that you have anxiety disorder. You might just be anxious. </li>
         <li>Anxiety disorder is the most common mental disorder in the US. </li>
@@ -73,8 +73,8 @@
                   <img style='height: 1px' id='img_icon' src='images/icon.png'/>
               </div>
               <div class='contentItem' id='videoFrame' style='display: none'>
-              <video id='video' loop src='/videos/CalmingBreath.mp4'></video>
-            </div>  
+                  <video id='contentVideo' loop src='/videos/CalmingBreath.mp4'></video>
+                </div>  
             <div class='contentItem' id='countToTen' style='display: none'>
                 <p id='countToTen_number'>10</p>
               
@@ -85,9 +85,16 @@
           </div>
           <div id='menu'>
             <h2 style='font-family: "Comfortaa", "Open Sans", sans-serif'>MENU</h2>
-            <p class="button_menu" onclick="breathe()">Calming Breathing</p>
+            <p class="button_menu" onclick="transitionToVideo('CalmingBreath')">Calm Breathing</p>
+            <p class="button_menu" onclick="transitionToVideo('CalmingWords')">Calming Words</p>
             <p class="button_menu" onclick='countToTen()'>Count From Ten</p>
-            <p class="button_menu" onclick='getImage()'>Get Image</p>
+            <p class="button_menu" onclick='getImage()'>Cat Images</p>
+            <p class="button_menu" onclick="transitionToVideo('CalmingFoodSmile')">Eating healthy and happy</p>
+            <p class="button_menu" onclick="transitionToVideo('CalmingSleep')">Sleep Well</p>
+            <p class="button_menu" onclick="transitionToVideo('CalmingArchery')">You Don't Have to be Perfect</p>
+            <br>
+            <p class="button_menu" onclick='settings()'>Settings &amp; Themes</p>
+            <p class="button_menu" onclick='aboutUs()'>Credits</p>
           </div>
           <div id='contentDesc'>
               <p id='p_desc' style='display: none'><b>How To Use Anxiety Steps: </b><span id='desc'>To follow through different steps of decreasing anxiety, click on one of the activities to do in the menu and then follow the instructions given.</span></p>

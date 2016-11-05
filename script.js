@@ -64,14 +64,15 @@ function updateDesc(val){
     desc.innerHTML = descriptions[val];
 }
 
-function breathe(){
+function transitionToVideo(url){
     clearCurrentItem();
     updateDesc('breathe');
     setTimeout(function(){
         document.getElementById('videoFrame').style.display = 'initial';
         document.getElementById('videoFrame').style.opacity = 1;
+        document.getElementById('contentVideo').src='/videos/'+url+'.mp4';
         setTimeout(function(){
-            document.getElementById('video').play();
+            document.getElementById('contentVideo').play();
         }, 400);
     }, 400)
 }
@@ -119,6 +120,9 @@ function valign(){
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }
 
+function aboutUs(){
+    alertify.alert('Credits', "Ryan Z. - Framework, Code, CSS<br>Davis D. - Ideas, Code Drafts<br>Rowan S. - Fun Facts and Animator (Animations and Videos)<br>Sam Z. - Icon and Image Design<br>Ian D. - Base Coder, Wants to be a potato<br><br><a target='_blank' href='https://github.com/AnxietySteps/AnxietySteps.github.io/commits/master'>GitHub Page</a>");
+}
 
 window.onresize = valign;
 window.onload = valign;
