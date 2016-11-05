@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css' />
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Anxiety Steps</title>
     <script>
@@ -17,7 +17,7 @@
   </head>
   <body>
     <center>
-    <h1>Anxiety Steps</h1>
+    <h1 style='font-weight: 400; font-family: "Comfortaa", sans-serif'>Anxiety Steps</h1>
     <span id='intro_screen'>
       <p id='p_readyToStart'>Anxiety Steps is a simple way to decrease anxiety.<br />
       It works by letting you select from different interactive<br />
@@ -29,7 +29,10 @@
     <span id='frame_div'>
       <div id='frame'>
           <div id='contentFrame'>
-            <video id='video' loop src='/videos/CalmingBreath.mp4'></video>
+            <!--<video id='video' loop src='/videos/CalmingBreath.mp4'></video>-->
+            <div class='contentItem' id='countToTen'>
+                <p id='countToTen_number'>1</p>
+            </div>
           </div>
           <div id='menu'>
             <h2>MENU</h2>
@@ -38,5 +41,8 @@
           </div>
       </div>
     </span>
+      <script>
+        var ctn = document.getElementById('countToTen_number')
+      </script>
   </body>
 </html>

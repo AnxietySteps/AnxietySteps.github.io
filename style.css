@@ -12,7 +12,10 @@ h1{
 h1, h2{
    text-align:center;
 }
-p {font-size:18px}
+p {
+    font-size:18px;
+    font-weight: 300;
+}
 #p_readyToStart{
     text-align: center;
     transition: opacity 0.5s;
@@ -82,4 +85,18 @@ p {font-size:18px}
 }
 .button_menu:active{
     color: #0079ef;
+}
+#countToTen{
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(#7171e6 0%, white 65%);
+    display: inline-block;
+}
+#countToTen p{
+    font-family: "Comfortaa", "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 100px;
+    line-height: 0;
+    margin-top: 200px;;
+    transition: all 1s;
 }
