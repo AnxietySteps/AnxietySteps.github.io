@@ -15,6 +15,7 @@ function start() {
         setTimeout(function () {
             document.getElementById('frame_div').style.opacity = '1';
             valign();
+            img_icon.style.height = (contentFrame.offsetHeight - 100)+'px';
         }, 5);
     }, 495);
 }
@@ -23,7 +24,19 @@ var cc_items = [];
 function hideItem(item){
     item.style.display = 'none';
 }
+
+var mainDescHidden = false;
+
 function clearCurrentItem(){
+
+    if(!mainDescHidden){
+        mainDescHidden = true;
+        contentDesc.style.top = '0px';
+        contentDesc.style.height = '68px';
+        p_altDesc.style.display = 'none';
+        p_desc.style.display = 'initial';
+    }
+    
     var videos = document.getElementsByTagName('video');
     for(var i = 0; i<videos.length; i++){
         videos[i].pause();

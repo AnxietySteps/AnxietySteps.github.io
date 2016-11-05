@@ -46,7 +46,10 @@
     <span id='frame_div'>
       <div id='frame'>
           <div id='contentFrame'>
-            <div class='contentItem' id='videoFrame' style='display: none'>
+              <div class='contentItem' id='homeContent'>
+                  <img style='height: 1px' id='img_icon' src='images/icon.png'/>
+              </div>
+              <div class='contentItem' id='videoFrame' style='display: none'>
               <video id='video' loop src='/videos/CalmingBreath.mp4'></video>
             </div>  
             <div class='contentItem' id='countToTen' style='display: none'>
@@ -64,7 +67,8 @@
             <p class="button_menu" onclick='getImage()'>Get Image</p>
           </div>
           <div id='contentDesc'>
-              <p id='p_desc'><b>Description: </b><span id='desc'>(Insert a description using text and formatting)</span></p>
+              <p id='p_desc' style='display: none'><b>Description: </b><span id='desc'>(Insert a description using text and formatting)</span></p>
+              <p id='p_altDesc'>Welcome to Anxiety Steps! Insert more information here.</p>
           </div>
       </div>
     </span>

@@ -19,6 +19,9 @@ p {
     font-size:18px;
     font-weight: 300;
 }
+#img_icon{
+    text-align: center;
+}
 #p_readyToStart{
     text-align: center;
     transition: opacity 0.5s;
@@ -64,14 +67,18 @@ p {
     height: calc(100% - 70px);
     display: inline-block;
     overflow: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 #contentDesc{
+    position: relative;
     width: calc(100% - 300px);
-    height: 68px;
+    z-index: 2;
+    top: -100px;
+    height: 168px;
     background: linear-gradient(#d2faff, #c5e0ff);
     display: inline-block;
     border-top: 2px solid #ddd;
+    transition: all 0.4s;
 }
 #p_desc{
     font-size: 16px;
