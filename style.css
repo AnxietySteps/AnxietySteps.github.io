@@ -4,6 +4,9 @@ body {
 h1{text-align:center;font-family:'Open Sans';color:black;}
 h2{text-align:center;font-family:'Open Sans';color:black;}
 p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;font-weight:normal;color:black;}
+#p_readyToStart{
+    transition: opacity 0.5s;
+}
 #btn_start{
     width: 250px;
     height: 100px;
@@ -11,7 +14,7 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;fo
     border: 1px solid #aaa;
     background-color: rgb(255, 255, 255);
     outline: none;
-    transition: all 0.2s, opacity 1s;
+    transition: all 0.2s, opacity 0.5s;
 }
 #btn_start:focus{
     border-color: #888;
@@ -28,9 +31,11 @@ p {text-align:center;font-family:'Open Sans';font-size:18px;font-style:normal;fo
 }
 #frame_div{
     display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 #frame{
-    border: 1px solid gray;
+    border: 2px solid #aaa;
     position: absolute;
     height: 70%;
     margin-left: 60px;
