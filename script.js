@@ -163,6 +163,12 @@ function updateColor(v, x){
     bgColor[x] = '#'+val;
     customColors.innerHTML = 'html{background: linear-gradient('+bgColor[0]+', '+bgColor[1]+','+bgColor[0]+') !important}'
     customColors_m.innerHTML = '#menu{background: linear-gradient('+bgColor[2]+', '+bgColor[3]+') !important} #contentDesc{background: linear-gradient('+mc(bgColor[2], bgColor[3])+', '+bgColor[3]+') !important}'
+    if(cd.style.color === 'rgb(255, 255, 255)'){
+        hd.style.color = 'white';
+    }
+    else{
+        hd.style.color = 'black';
+    }
 }
 
 function themes(){
