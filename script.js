@@ -148,7 +148,7 @@ function rgbToHex(r, g, b) {
 }
 
 function aboutUs(){
-    alertify.alert('Credits', "Ryan Z. - Framework, Code, CSS<br>Davis D. - Ideas, Code Drafts<br>Rowan S. - Fun Facts and Animator (Animations and Videos)<br>Sam Z. - Icon and Image Design<br>Ian D. - Base Coder, Wants to be a potato<br><br><a target='_blank' href='https://github.com/AnxietySteps/AnxietySteps.github.io/commits/master'>GitHub Page</a>");
+    alertify.alert('Credits', "Ryan Z. - Framework, Code, CSS<br>Davis D. - Ideas, Code Drafts<br>Rowan S. - Fun Facts and Animator (Animations and Videos)<br>Sam Z. - Icon and Image Design<br>Ian D. - Made Initial Framework, setup accounts<br><br><a target='_blank' href='https://github.com/AnxietySteps/AnxietySteps.github.io/commits/master'>GitHub Page</a>");
 }
 
 function mc(a1, b1){
