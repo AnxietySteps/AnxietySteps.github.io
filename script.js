@@ -1,5 +1,5 @@
 var descriptions = {
-    'breathe': 'No Description Yet',
+    'breathe': 'In this activity, you will follow the animation. First breathe in for as long as the animation says, then hold it for the time it says, then release your breath slowly.',
     'countFromTen': 'No Description Yet',
     'getImage': 'No Description Yet'
 };
