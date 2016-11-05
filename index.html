@@ -31,15 +31,17 @@
     <span id='frame_div'>
       <div id='frame'>
           <div id='contentFrame'>
-            <!--<video id='video' loop src='/videos/CalmingBreath.mp4'></video>-->
+            <div class='contentItem' id='videoFrame'>
+              <video id='video' loop src='/videos/CalmingBreath.mp4'></video>
+              </div>  
             <div class='contentItem' id='countToTen'>
-                <p id='countToTen_number'>1</p>
+                <p id='countToTen_number'>10</p>
             </div>
           </div>
           <div id='menu'>
             <h2>MENU</h2>
             <p class="button_menu" onclick="breathe()">Calming Breathing</p>
-            <p class="button_menu" onclick='countToTen()'>Count To Ten</p>
+            <p class="button_menu" onclick='countToTen()'>Count From Ten</p>
             <p class="button_menu" onclick='imageGet()'>Get Image</p>
           </div>
       </div>

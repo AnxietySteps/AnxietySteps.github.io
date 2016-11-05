@@ -12,11 +12,44 @@ function start() {
     }, 495);
 }
 
-function breathe() {
-    setTimeout(function(){//Start the video
-        runAnimation();
-//        document.getElementById('video').play();
-    }, 1000)
+var cc_items = [];
+function hideItem(item){
+    item.style.display = 'none';
+}
+function clearCurrentItem(){
+    var videos = document.getElementsByTagName('video');
+    for(var i = 0; i<videos.length; i++){
+        videos[i].pause();
+        videos[i].currentTime = 0;
+    }
+    
+    cc_items = document.getElementsByClassName('contentItem');
+    for(var i = 0; i<cc_items.length; i++){
+        cc_items[i].style.opacity = '0';
+        hideItem(cc_items[i]);
+    }
+}
+
+function breathe(){
+    clearCurrentItem();
+    setTimeout(function(){
+        document.getElementById('videoFrame').style.display = 'initial';
+        document.getElementById('videoFrame').style.opacity = 1;
+        setTimeout(function(){
+            document.getElementById('video').play();
+        }, 400);
+    }, 400)
+}
+
+function countToTen() {
+    clearCurrentItem();
+    setTimeout(function(){
+        document.getElementById('countToTen').style.opacity = 1;
+        setTimeout(function(){//Start the video
+            count = 10;
+            runAnimation();
+        }, 400)
+    }, 400);
 }
 
 function valign(){
