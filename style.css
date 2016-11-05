@@ -78,7 +78,7 @@ p {
     z-index: 2;
     top: -100px;
     height: 168px;
-    background: linear-gradient(#d2faff, #c5e0ff);
+    background: linear-gradient(#cbe6ff,#d3e9ff);
     display: inline-block;
     border-top: 2px solid #ddd;
     transition: all 0.4s;
