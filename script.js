@@ -1,4 +1,5 @@
 function start() {
+    "use strict";
     document.getElementById('p_readyToStart').style.opacity = '0';
     document.getElementById('btn_start').style.opacity = '0';
     document.getElementById('btn_start').style.pointer = 'default';
