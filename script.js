@@ -95,7 +95,7 @@ function getImage(){
 function valign(){
     var videos = document.getElementsByTagName('video');
     for(var i = 0; i<videos.length; i++){
-        videos[i].style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
+        videos[i].style.marginTop = (frame.offsetHeight / 2 - 240)+'px';
     }
 //    video.style.marginTop = (frame.offsetHeight / 2 - 200)+'px';
 }

@@ -60,6 +60,8 @@ p {
     width: calc(100% - 300px);
     height: calc(100% - 70px);
     display: inline-block;
+    overflow: hidden;
+    overflow-y: auto;
 }
 #contentDesc{
     width: calc(100% - 300px);
