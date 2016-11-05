@@ -12,7 +12,7 @@ function start() {
     }, 495);
 }
 
-function breath() {
+function breathe() {
     setTimeout(function(){//Start the video
         document.getElementById('video').play();
     }, 1000)
