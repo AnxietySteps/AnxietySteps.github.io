@@ -1,8 +1,9 @@
 html{
     font-family:'Open Sans';
-    height: 110%;
+    height: 100%;
     background: blue;
-    background: linear-gradient(#a2a2f8, #607fff);
+    background: linear-gradient(#a2a2f8, #738efd, #a2a2f8);
+    background-size: cover;
 }
 ul{
     list-style-position: inside;
