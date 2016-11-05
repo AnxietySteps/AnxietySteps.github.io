@@ -10,6 +10,9 @@ function start() {
             valign();
         }, 5);
     }, 495);
+}
+
+function breath() {
     setTimeout(function(){//Start the video
         document.getElementById('video').play();
     }, 1000)
